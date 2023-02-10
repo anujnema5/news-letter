@@ -12,7 +12,6 @@ app.get("/", (req,res)=>{
       res.sendFile(__dirname + "/signup.html");
 });
 
-
 app.post("/", (req,res)=>{
       const firstName = req.body.firstname;
       const lastName = req.body.lastname;
@@ -60,7 +59,7 @@ app.post("/failure", (req,res)=>{
       res.redirect("/");
 })
 
-app.listen(process.env.PORT || 3000, (req,res)=>{
+app.listen(process.env.PORT || 3003, (req,res)=>{
       console.log("Server successfully started :)")
 });
 
